@@ -22,7 +22,7 @@ flattens any array or array-like object:
 It takes an optional 2nd param which is the # of levels to flatten
 
 ```js
-> flatten([1, 2, [3, 4, [5, 6, 0, 7]]])
+> flatten([1, 2, [3, 4, [5, 6, 0, 7]]], 1)
 [ 1, 2, 3, 4, [ 5, 6, 0, 7 ] ]
 ```
 
