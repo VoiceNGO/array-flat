@@ -4,7 +4,7 @@ function flattenArray(ary, levels, removeFalsey) {
   if (levels == null) { levels = Infinity; }
 
   for (var i = 0; i < ary.length; i++) {
-    if (levels && ary[i] && ary[i].slice) {
+    if (levels && ary[i] && ary[i].splice) {
       out.push.apply(out, flattenArray(ary[i], levels - 1, removeFalsey));
     } else if (ary[i] || !removeFalsey) {
       out.push(ary[i]);

@@ -1,10 +1,10 @@
 {
   "name": "array-flat",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple array flattening library",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers coffee:coffee-script/register test"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/d9d/array-flat/issues"
   },
-  "homepage": "https://github.com/d9d/array-flat#readme"
+  "homepage": "https://github.com/d9d/array-flat#readme",
+  "devDependencies": {
+    "chai": "^3.3.0"
+  }
 }

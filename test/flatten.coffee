@@ -1,8 +1,6 @@
 chai   = require 'chai'
-expect = chai.expect
 
 chai.should()
-
 
 flatten   = require('../')
 compact   = flatten.compact
@@ -15,6 +13,9 @@ describe 'flatten', =>
   it 'flattens N levels', =>
     flatten(toFlatten, 1).should.deep.equal([0, 1, 2, false, [3, [4, null, 5], 6], 7, undefined, 8, 9])
     flatten(toFlatten, 2).should.deep.equal([0, 1, 2, false, 3, [4, null, 5], 6, 7, undefined, 8, 9])
+
+  it 'flattens an array of strings', =>
+    flatten([['foo', 'bar', 'baz']]).should.deep.equal(['foo', 'bar', 'baz'])
 
 describe 'compact', =>
   it 'removes falsey values', =>
