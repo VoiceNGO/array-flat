@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/d9d/array-flat.git"
   },
-  "keywords": ["array", "flat", "flattening", "compact"],
+  "keywords": [
+    "array",
+    "flat",
+    "flattening",
+    "compact"
+  ],
   "author": "Mark Kahn <m@vouchr.com>",
   "license": "MIT",
   "bugs": {
